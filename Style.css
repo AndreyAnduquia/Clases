@@ -72,7 +72,7 @@ main .main-content p {
     margin: 20px 0;
 }
 
-main .main-content .started{
+main .main-content .started {
     background-color: #fff;
     color: black;
     border: none;
@@ -95,7 +95,11 @@ main .main-content .version-astro {
     gap: 7px;
 }
 
-main .main-content .version-astro svg{
+main .main-content .version-astro:hover {
+    text-decoration: underline;
+}
+
+main .main-content .version-astro svg {
     height: 18px;
     width: 18px;
 }
@@ -120,15 +124,20 @@ main .main-content .command {
 }
 
 main .main-content .command svg {
-    transform: rotate(270deg);
     width: 15px;
     height: 15px;
+}
+
+main .main-content .command .arrow {
+    transform: rotate(270deg);
 }
 
 /* main .main-content .command i {
     color: #fff;
     font-size: 30px;
 } */
+
+/* main patronage*/
 
 main .patronage .logos {
     display: flex;
@@ -150,4 +159,19 @@ main .patronage svg {
     width: 120px;
     height: 110px;
     /* gap: 10px; */
+}
+
+/* main feacture*/
+
+main .optimized {
+    padding: 25px;
+    margin-top: 80px;
+}
+
+main .subtitle {
+    color: #ff007a;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    display: inline-block;
 }
