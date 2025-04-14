@@ -500,6 +500,36 @@ main {
             height: 77px;
             background: red;
             border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .filled {
+              width: 66px;
+              height: 66px;
+              border-radius: 50%;
+              background-color: #000000bd;
+
+              filter: grayscale(100%);
+          
+               display: flex;
+               justify-content: center;
+               align-items: center;
+
+              img {
+                width: 32px;
+                height: 32px;
+              }
+            }
+
+            &:not(:hover) {
+              background-color: #858b99;
+            }
+
+            &:hover .filled {
+              filter: grayscale(0%);
+            }
           }
     
           .react {
@@ -520,6 +550,14 @@ main {
     
           .solid {
             background: rgb(118 179 225);
+          }
+
+          .active {
+            background: rgb(97 218 251) !important;
+
+            .filled {
+              filter: grayscale(0%);
+            }
           }
         }
     }
